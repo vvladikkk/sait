@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Страница авторизации</title>
+</head>
+<body>
+<h1 id="your-id-name"></h1>Авторизуйтесь для входа на "секретные" страницы</h1>
+<label for="username">Username:</label>
+<input type="text" id="username" placeholder="Лoгин">
+<br><br>
+<label>Password:</label>
+<input type="password" id="password" placeholder="Пapoль" >
+<br><br>
+<input type="button" value="Boйти" onclick="login()" >
+</body>
+<script>
+function login()
+ { elem = document.getElementById('password'); 
+ password = elem.value;
+if (password == "12345" )
+ { alert("Нажмите OK, чтобы перейти на другую страницу");
+  window.open("click-on-button1.html", "_self");
+
+} else { 
+	alert("Ты не админ"); }
+}
+</script>
+</html>
